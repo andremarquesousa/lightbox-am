@@ -17,8 +17,10 @@
                         alt: text
                     });
 
+                    $lightbox.addClass('active loading');
+
                     $image.load(function() {
-                        $lightbox.addClass('active');
+                        $lightbox.removeClass('loading');
                     });
                 } else {
                     $lightbox.addClass('active');
@@ -31,8 +33,10 @@
 
                 $('body').append($lightbox);
 
+                $lightbox.addClass('active loading');
+
                 $('img', $lightbox).load(function() {
-                    $lightbox.addClass('active');
+                    $lightbox.removeClass('loading');
                 });
             }
             event.preventDefault();

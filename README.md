@@ -50,6 +50,20 @@ CSS EXAMPLE
     width: 100%;
     height: 100%;
 }
+.lightbox-am.loading:after {
+    background: url('images/loading.gif') center no-repeat;
+    content: '';
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 118px;
+    height: 118px;
+    margin: auto;
+}
 .lightbox-am img {
     -moz-transition: -moz-transform 0.6s;
     -o-transition: -o-transform 0.6s;
@@ -63,7 +77,7 @@ CSS EXAMPLE
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
     right: 0;
     margin: auto;
     max-width: 100%;
@@ -75,12 +89,15 @@ CSS EXAMPLE
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
 }
+.lightbox-am.loading img {
+    opacity: 0;
+}
 .lightbox-am .close-am {
     background: #ccc;
     position: absolute;
     right: 10px;
     top: 10px;
-    z-index: 3;
+    z-index: 4;
     padding: 5px;
 }
 ```
