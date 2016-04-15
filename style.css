@@ -29,7 +29,8 @@
     height: 100%;
     overflow: auto;
 }
-.lightbox-am.active {
+.lightbox-am.active
+, .lightbox-am.loading {
     visibility: visible;
 }
 .lightbox-am:before {

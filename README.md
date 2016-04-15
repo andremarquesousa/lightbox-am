@@ -37,7 +37,8 @@ CSS EXAMPLE
     height: 100%;
     overflow: auto;
 }
-.lightbox-am.active {
+.lightbox-am.active
+, .lightbox-am.loading {
     visibility: visible;
 }
 .lightbox-am:before {
@@ -73,6 +74,7 @@ CSS EXAMPLE
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
     transform: scale(0, 0);
+    display: block;
     position: absolute;
     left: 0;
     top: 0;
